@@ -1,31 +1,18 @@
-#p12
-'''class Info:
-    def __init__(self,firstname,lastname):
-        self.firstname = firstname
-        self.lastname = lastname
-    def  data(self):
-        print("Firstname =",self.firstname,"Lastname =",self.lastname)
-info1 = Info('Akansha','Kumari')
-info1.data()'''
 
-'''List1 = [10,20,30]
-res = List1.append(40)
-print("Append",List1)
-res = List1.pop()
-print("Remove",List1)'''
+# Write a program that accepts a comma separated sequence of words as
+# input and prints the words in a comma-separated sequence after sorting
+# them alphabetically.
 
-'''txt = input("enter a text")
-if  txt == 'YES':
-    print("Yes")
-else:
-    print("NO")'''
-'''n = int(input("Enter a number"))
-if n % 7 == 0:
-    print(" it is divisibe by 7")
-else:
-    print("it is not divisible by 7")'''
-n = input("Enter a number")
+# Suppose the following input is supplied to the program:
+# without,hello,bag,world
 
+# Then, the output should be:
+# bag,hello,without,world
 
-        
-    
+# Hints:
+# In case of input data being supplied to the question, it should be
+# assumed to be a console input.
+
+txt = input("Enter a comma separated sequence of words:")
+txt = sorted(txt.split(","))
+print(" ".join(txt))
